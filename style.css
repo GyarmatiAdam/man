@@ -1,14 +1,15 @@
-
+/*-------basic css-------*/
 body{
     margin: auto;
     width: 50%;
-    padding-top: 60px;
+    padding-top: 160px;
 }
 
 #whole{
     position: relative;
 }
 
+ 
 #hat_top{
     height: 40px;
     width: 40px;
@@ -137,3 +138,4 @@ body{
     margin: 380px 70px;
     border-radius: 0px 20px 0px 0px;
 }
+/*-------advanced css fr movements-------*/
