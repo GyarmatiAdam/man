@@ -109,7 +109,7 @@ body{
     border-radius: 25px;
 }
 
-.left_arm{
+.right_arm{
     height: 120px;
     width: 20px;
     border-radius: 30px;
@@ -119,13 +119,15 @@ body{
 
 }
 
-.right_arm{
+.left_arm{
     height: 20px;
     width: 120px;
     border-radius: 30px;
     position: absolute;
     background: darkblue;
-    margin: 110px 70px;
+    margin: 110px 105px;
+    transform: rotate(80deg);
+    transform-origin: top left;
 }
 
 .under{
@@ -180,4 +182,17 @@ body{
 .rise2{
     margin: -40px -15px;
     transform : rotate(-60deg);
+}
+
+@keyframes wave{
+    from{
+        transform : rotate(10deg);
+        transform-origin: top left;
+        margin: 110px 70px;
+    }
+    to{
+        transform : rotate(-50deg);
+        transform-origin: top left;
+        margin: 110px 80px;
+    }
 }
