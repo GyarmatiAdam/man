@@ -5,12 +5,12 @@ body{
     padding-top: 160px;
 }
 
-#whole{
+.whole{
     position: relative;
 }
 
  
-#hat_top{
+.hat_top{
     height: 40px;
     width: 40px;
     background: darkred;
@@ -18,7 +18,7 @@ body{
     margin: -40px 30px;
 }
 
-#hat_bottom{
+.hat_bottom{
     height: 10px;
     width: 100px;
     background: darkred;
@@ -27,7 +27,7 @@ body{
     z-index: 10;
 }
 
-#head{
+.head{
     height: 100px;
     width: 100px;
     background: yellow;
@@ -35,7 +35,7 @@ body{
     border-radius: 50%;
 }
 
-#left_eye{
+.left_eye{
     height: 10px;
     width: 8px;
     margin: 20px 20px 80px 30px;
@@ -44,7 +44,7 @@ body{
     position: absolute;
 }
 
-#right_eye{
+.right_eye{
     height: 10px;
     width: 8px;
     margin: 20px 30px 80px 60px;
@@ -53,7 +53,7 @@ body{
     position: absolute;
 }
 
-#nose{
+.nose{
     height: 14px;
     width: 8px;
     margin: 40px 45px;
@@ -61,7 +61,7 @@ body{
     position: absolute;
 }
 
-#mouth{
+.mouth{
     height: 20px;
     width: 40px;
     margin: 60px 30px;
@@ -69,7 +69,7 @@ body{
     position: absolute;
     border-radius: 0px 0px 30px 30px;
 }
-#body{
+.body{
     height: 160px;
     width: 100px;
     background: darkblue;
@@ -78,7 +78,7 @@ body{
     border-radius: 25px;
 }
 
-#left_arm{
+.left_arm{
     height: 120px;
     width: 20px;
     border-radius: 30px;
@@ -88,7 +88,7 @@ body{
 
 }
 
-#right_arm{
+.right_arm{
     height: 20px;
     width: 120px;
     border-radius: 30px;
@@ -97,7 +97,7 @@ body{
     margin: 110px 70px;
 }
 
-#under{
+.under{
     height: 40px;
     width: 100px;
     background: green;
@@ -105,7 +105,7 @@ body{
     margin: 240px -5px;
 }
 
-#left_leg{
+.left_leg{
     height: 120px;
     width: 25px;
     background: green;
@@ -113,7 +113,7 @@ body{
     margin: 270px -5px;
 }
 
-#right_leg{
+.right_leg{
     height: 120px;
     width: 25px;
     background: green;
@@ -121,7 +121,7 @@ body{
     margin: 270px 70px;
 }
 
-#left_feet{
+.left_feet{
     height: 20px;
     width: 40px;
     background: black;
@@ -130,7 +130,7 @@ body{
     border-radius: 0px 20px 0px 0px;
 }
 
-#right_feet{
+.right_feet{
     height: 20px;
     width: 40px;
     background: black;
@@ -138,4 +138,15 @@ body{
     margin: 380px 70px;
     border-radius: 0px 20px 0px 0px;
 }
-/*-------advanced css fr movements-------*/
+
+/*-------advanced css for movements-------*/
+
+.rise{
+    margin: -60px 0px;
+    transform: rotate(30deg);
+}
+
+.rise2{
+    margin: -40px -15px;
+    transform : rotate(-60deg);
+}
