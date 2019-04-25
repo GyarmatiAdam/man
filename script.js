@@ -21,6 +21,15 @@ function part_out(){
     }
 }
 
+//text-bubble vsible for 3 sec
+function appear(){
+    for(i = 0; i < bub.length; i++){
+        bub[i].style.visibility = 'visible';
+        bub[i].animate([{opacity:'0.1'}, {opacity:'0.5'},{opacity: '1'},{opacity: '0.5'},{opacity: '0'}],
+        {duration:3000, fill:'forwards'});
+    }
+}
+
 //man rises hat
 hat.addEventListener('mouseover', function(){
 
@@ -40,13 +49,38 @@ hat.addEventListener('mouseout', function(){
 
     part_out.call();
 })
-//////////////////////////////////////////////////
 
+//man waveing with left hand//////////////////////////////////////////////////
 const left_arm = document.querySelector('.left_arm');
 
-left_arm.addEventListener('click', function(){
+    fg = left_arm.onclick = function waveing(){
 
-    left_arm.style.animation = 'wave 0.5s infinite';
-    left_arm.style.animationDirection = "alternate";
-  
+//waving with left arm
+        left_arm.style.animation = 'wave 0.1s 10';
+        left_arm.style.animationDirection = "alternate";
+        
+//bubble appears onclick for 3 secons
+        appear.call();
+
+        bubble1.innerHTML = 'Hello!!!';   
+    }
+
+//man make a deep bow////////////////////////////////////////////////////////////////
+
+const upper = document.querySelector('.upper');
+const body = document.querySelector('.body');
+
+
+body.addEventListener('mouseover', function(){
+
+    upper.classList.add('bow')
+
 })
+
+body.addEventListener('mouseout', function(){
+
+    upper.classList.remove('bow')
+
+})
+
+
