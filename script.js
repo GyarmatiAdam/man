@@ -4,6 +4,8 @@ const hat_bottom = document.querySelector('.hat_bottom');
 const hat = document.querySelector('.hat');
 const bub = document.querySelectorAll('.bub');
 const bubble1 = document.querySelector('.bubble1');
+const right_arm = document.querySelector('.right_arm');
+
 
 //make text-bubble visible--callable function
 function part_over(){
@@ -35,6 +37,7 @@ hat.addEventListener('mouseover', function(){
 
     hat_top.classList.add('rise')
     hat_bottom.classList.add('rise2')
+    right_arm.classList.add('rise3')
 
     bubble1.innerHTML = 'Hi, How are you today?';
 
@@ -46,6 +49,7 @@ hat.addEventListener('mouseout', function(){
 
     hat_top.classList.remove('rise')
     hat_bottom.classList.remove('rise2')
+    right_arm.classList.remove('rise3')
 
     part_out.call();
 })
@@ -69,18 +73,27 @@ const left_arm = document.querySelector('.left_arm');
 
 const upper = document.querySelector('.upper');
 const body = document.querySelector('.body');
+const mouth = document.querySelector('.mouth');
+
 
 
 body.addEventListener('mouseover', function(){
 
     upper.classList.add('bow')
+    mouth.classList.add('sad')
+
+    part_over.call()
+    bubble1.innerHTML = 'I beg your pardon...';
 
 })
 
 body.addEventListener('mouseout', function(){
 
     upper.classList.remove('bow')
+    mouth.classList.remove('sad')
 
+
+    part_out.call();
 })
 
 
