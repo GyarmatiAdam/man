@@ -5,6 +5,7 @@ const hat = document.querySelector('.hat');
 const bub = document.querySelectorAll('.bub');
 const bubble1 = document.querySelector('.bubble1');
 const right_arm = document.querySelector('.right_arm');
+const head = document.querySelector('.head');
 
 
 //make text-bubble visible--callable function
@@ -33,11 +34,12 @@ function appear(){
 }
 
 //man rises hat
-hat.addEventListener('mouseover', function(){
+head.addEventListener('mouseover', function(){
 
     hat_top.classList.add('rise')
     hat_bottom.classList.add('rise2')
     right_arm.classList.add('rise3')
+
 
     bubble1.innerHTML = 'Hi, How are you today?';
 
@@ -45,11 +47,12 @@ hat.addEventListener('mouseover', function(){
 })
 
 //man put back the hat
-hat.addEventListener('mouseout', function(){
+head.addEventListener('mouseout', function(){
 
     hat_top.classList.remove('rise')
     hat_bottom.classList.remove('rise2')
     right_arm.classList.remove('rise3')
+
 
     part_out.call();
 })
@@ -57,7 +60,7 @@ hat.addEventListener('mouseout', function(){
 //man waveing with left hand//////////////////////////////////////////////////
 const left_arm = document.querySelector('.left_arm');
 
-    fg = left_arm.onclick = function waveing(){
+    left_arm.onclick = function waveing(){
 
 //waving with left arm
         left_arm.style.animation = 'wave 0.1s 10';
@@ -69,7 +72,7 @@ const left_arm = document.querySelector('.left_arm');
         bubble1.innerHTML = 'Hello!!!';   
     }
 
-//man make a deep bow////////////////////////////////////////////////////////////////
+//man makes a bow////////////////////////////////////////////////////////////////
 
 const upper = document.querySelector('.upper');
 const body = document.querySelector('.body');
