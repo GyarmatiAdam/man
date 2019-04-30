@@ -140,7 +140,7 @@ body{
     z-index: 9;
 }
 
-.left_leg{
+.right_leg{
     height: 120px;
     width: 25px;
     background: green;
@@ -148,15 +148,16 @@ body{
     margin: 270px -5px;
 }
 
-.right_leg{
-    height: 120px;
+.left_leg{
+    height: 140px;
     width: 25px;
     background: green;
     position: absolute;
-    margin: 270px 70px;
+    margin: 250px 70px;
+    border-radius: 5px 5px 5px 5px;
 }
 
-.left_feet{
+.right_feet{
     height: 20px;
     width: 40px;
     background: black;
@@ -165,13 +166,23 @@ body{
     border-radius: 0px 20px 0px 0px;
 }
 
-.right_feet{
+.left_feet{
     height: 20px;
     width: 40px;
     background: black;
     position: absolute;
     margin: 380px 70px;
     border-radius: 0px 20px 0px 0px;
+}
+
+.ball{
+    height: 60px;
+    width: 60px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    margin: 340px 120px;
+    transition-duration: 1s;
 }
 
 /*-------advanced css for movements-------*/
@@ -221,6 +232,39 @@ body{
 .sad{
     border-radius: 30px 30px 0px 0px;
 }
+
 .upper{
     transition-duration: 0.8s;
 }
+
+/*kick the ball*/
+@keyframes kick{
+    from{
+        transform: rotate(-10deg);
+        transform-origin: 50px 290px;
+    }
+    to{
+        transform: rotate(-50deg);
+        transform-origin: 90px 270px;
+    }
+}
+/*ball flies*/
+@keyframes fly{
+    from{
+        margin: 340px 120px;
+    }
+    to{
+        transform: rotate(360deg);
+        margin: 200px 120px;
+    }
+}
+@keyframes flyaway{
+    from{
+        margin: 340px 120px;
+        transition-delay: 9s;
+    }
+    to{
+        margin: -500px 160px;
+    }
+}
+

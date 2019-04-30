@@ -99,4 +99,20 @@ body.addEventListener('mouseout', function(){
     part_out.call();
 })
 
+// kick the ball ///////////////////////////////////////////////
 
+const left = document.querySelector('.left');
+const left_leg = document.querySelector('.left_leg');
+const left_feet = document.querySelector('.left_feet');
+const ball = document.querySelector('.ball');
+const lower = document.querySelector('.lower');
+
+lower.addEventListener('click', function(){
+
+    left.style.animation = 'kick 1s 6';
+    left.style.animationDirection = "alternate";
+
+    ball.style.animation = ['fly 1s 6'];
+    ball.style.animationDirection = "alternate";
+
+})
